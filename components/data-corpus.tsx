@@ -86,6 +86,61 @@ export function DataCorpus() {
           ))}
         </div>
 
+        {/* Regulatory market coverage grid */}
+        <div style={{ marginTop: 48, marginBottom: 8 }}>
+          <div
+            className="flex flex-wrap justify-center"
+            style={{ gap: 12, maxWidth: 720, margin: "0 auto" }}
+          >
+            {markets.map((m) => (
+              <div
+                key={m.name}
+                className="flex flex-row items-center"
+                style={{
+                  gap: 8,
+                  border: "1px solid rgba(255,255,255,0.12)",
+                  borderRadius: 6,
+                  padding: "8px 14px",
+                  background: "rgba(255,255,255,0.04)",
+                }}
+              >
+                <span style={{ fontSize: 15 }}>{m.flag}</span>
+                <span
+                  style={{
+                    fontSize: 13,
+                    color: "rgba(255,255,255,0.7)",
+                    fontFamily: "var(--font-inter)",
+                  }}
+                >
+                  {m.name}
+                </span>
+                <span
+                  style={{
+                    width: 7,
+                    height: 7,
+                    borderRadius: "50%",
+                    background: m.full ? "#2D6A4F" : "#B45309",
+                    flexShrink: 0,
+                    display: "inline-block",
+                  }}
+                />
+              </div>
+            ))}
+          </div>
+          <p
+            style={{
+              marginTop: 12,
+              textAlign: "center",
+              fontSize: 11,
+              color: "rgba(255,255,255,0.3)",
+              fontStyle: "italic",
+              fontFamily: "var(--font-inter)",
+            }}
+          >
+            Green — full coverage · Amber — expanding coverage
+          </p>
+        </div>
+
         {/* Source row */}
         <p
           style={{
@@ -125,6 +180,22 @@ export function DataCorpus() {
     </section>
   )
 }
+
+const markets = [
+  { flag: "🇪🇺", name: "EU", full: true },
+  { flag: "🇺🇸", name: "US", full: true },
+  { flag: "🇬🇧", name: "UK", full: true },
+  { flag: "🇨🇳", name: "China", full: true },
+  { flag: "🇯🇵", name: "Japan", full: true },
+  { flag: "🇮🇳", name: "India", full: true },
+  { flag: "🇰🇷", name: "Korea", full: true },
+  { flag: "🇨🇦", name: "Canada", full: true },
+  { flag: "🇦🇺", name: "Australia", full: false },
+  { flag: "🇲🇾", name: "Malaysia", full: false },
+  { flag: "🇸🇬", name: "Singapore", full: false },
+  { flag: "🇧🇷", name: "Brazil", full: false },
+  { flag: "🇦🇪", name: "UAE", full: false },
+]
 
 const stats = [
   { value: "550,000+", label: "Marketed products analysed" },

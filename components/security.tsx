@@ -121,6 +121,74 @@ export function Security() {
           ))}
         </div>
 
+        {/* Encryption flow diagram */}
+        <div
+          className="flex justify-center"
+          style={{ marginBottom: 56 }}
+        >
+          <svg
+            viewBox="0 0 560 80"
+            width="100%"
+            style={{ maxWidth: 560, height: 80, overflow: "visible" }}
+            aria-label="Encryption flow: Your formulation encrypted with AES-256 per-user key, stored in encrypted vault, accessible only via your account"
+          >
+            {/* Step 1 — Document icon */}
+            <g transform="translate(56, 40)">
+              {/* Document icon */}
+              <rect x="-14" y="-18" width="28" height="34" rx="3" fill="none" stroke="rgba(255,255,255,0.7)" strokeWidth="1.5" />
+              <line x1="-7" y1="-8" x2="7" y2="-8" stroke="rgba(255,255,255,0.7)" strokeWidth="1.2" />
+              <line x1="-7" y1="-2" x2="7" y2="-2" stroke="rgba(255,255,255,0.7)" strokeWidth="1.2" />
+              <line x1="-7" y1="4" x2="3" y2="4" stroke="rgba(255,255,255,0.7)" strokeWidth="1.2" />
+              <text x="0" y="28" textAnchor="middle" fill="rgba(255,255,255,0.5)" fontSize="11" fontFamily="var(--font-inter)">Your formulation</text>
+            </g>
+
+            {/* Arrow 1 */}
+            <g transform="translate(168, 40)">
+              <line x1="-36" y1="0" x2="36" y2="0" stroke="#D4A843" strokeWidth="1.5" />
+              <polygon points="36,0 29,-4 29,4" fill="#D4A843" />
+              {/* Lock icon above arrow */}
+              <g transform="translate(0, -20)">
+                <rect x="-6" y="-2" width="12" height="10" rx="2" fill="none" stroke="rgba(255,255,255,0.7)" strokeWidth="1.4" />
+                <path d="M-3.5 -2 Q-3.5 -8 0 -8 Q3.5 -8 3.5 -2" fill="none" stroke="rgba(255,255,255,0.7)" strokeWidth="1.4" />
+              </g>
+              <text x="0" y="18" textAnchor="middle" fill="#D4A843" fontSize="10" fontFamily="var(--font-inter)">AES-256 per-user key</text>
+            </g>
+
+            {/* Step 2 — Vault cylinder */}
+            <g transform="translate(280, 40)">
+              <ellipse cx="0" cy="-14" rx="16" ry="5" fill="none" stroke="rgba(255,255,255,0.7)" strokeWidth="1.5" />
+              <rect x="-16" y="-14" width="32" height="24" fill="none" stroke="rgba(255,255,255,0.7)" strokeWidth="1.5" />
+              <ellipse cx="0" cy="10" rx="16" ry="5" fill="none" stroke="rgba(255,255,255,0.7)" strokeWidth="1.5" />
+              {/* lock on vault */}
+              <rect x="-4" y="-6" width="8" height="7" rx="1.5" fill="none" stroke="rgba(255,255,255,0.7)" strokeWidth="1.2" />
+              <path d="M-2 -6 Q-2 -10 0 -10 Q2 -10 2 -6" fill="none" stroke="rgba(255,255,255,0.7)" strokeWidth="1.2" />
+              <text x="0" y="28" textAnchor="middle" fill="rgba(255,255,255,0.5)" fontSize="11" fontFamily="var(--font-inter)">Encrypted vault</text>
+            </g>
+
+            {/* Arrow 2 */}
+            <g transform="translate(392, 40)">
+              <line x1="-36" y1="0" x2="36" y2="0" stroke="#D4A843" strokeWidth="1.5" />
+              <polygon points="36,0 29,-4 29,4" fill="#D4A843" />
+              {/* Key icon above arrow */}
+              <g transform="translate(0, -20)">
+                <circle cx="-4" cy="0" r="5" fill="none" stroke="rgba(255,255,255,0.7)" strokeWidth="1.4" />
+                <line x1="1" y1="0" x2="10" y2="0" stroke="rgba(255,255,255,0.7)" strokeWidth="1.4" />
+                <line x1="8" y1="0" x2="8" y2="3" stroke="rgba(255,255,255,0.7)" strokeWidth="1.4" />
+                <line x1="6" y1="0" x2="6" y2="3" stroke="rgba(255,255,255,0.7)" strokeWidth="1.4" />
+              </g>
+              <text x="0" y="18" textAnchor="middle" fill="#D4A843" fontSize="10" fontFamily="var(--font-inter)">Only you hold the key</text>
+            </g>
+
+            {/* Step 3 — User circle */}
+            <g transform="translate(504, 40)">
+              <circle cx="0" cy="-10" r="10" fill="none" stroke="rgba(255,255,255,0.7)" strokeWidth="1.5" />
+              <circle cx="0" cy="-12" r="4" fill="none" stroke="rgba(255,255,255,0.7)" strokeWidth="1.4" />
+              <path d="M-7 -3 Q-7 2 0 2 Q7 2 7 -3" fill="none" stroke="rgba(255,255,255,0.7)" strokeWidth="1.4" />
+              <text x="0" y="14" textAnchor="middle" fill="rgba(255,255,255,0.5)" fontSize="11" fontFamily="var(--font-inter)">Your account</text>
+            </g>
+          </svg>
+        </div>
+
         {/* Divider */}
         <div
           style={{
