@@ -68,8 +68,7 @@ export function Hero({ onRegisterClick }: HeroProps) {
             lineHeight: 1.7,
           }}
         >
-          From brief to regulatory-compliant formulation in minutes. Built on
-          the deepest cosmetic knowledge base ever assembled.
+          From brief to regulatory-compliant formulation in minutes.
         </p>
 
         {/* CTA pair */}

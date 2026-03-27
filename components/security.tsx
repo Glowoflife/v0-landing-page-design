@@ -65,8 +65,7 @@ export function Security() {
           }}
         >
           Every formula you generate is encrypted with a key derived from your
-          account — before it touches our database. We cannot read your work. We
-          will never share it with ingredient suppliers or third parties.
+          account — before it touches our database. We cannot read your work.
         </p>
 
         {/* Three pillars */}
@@ -231,17 +230,17 @@ const pillars = [
   {
     Icon: LockIcon,
     title: "Per-User AES-256 Encryption",
-    body: "Each formulation is encrypted with a unique key derived from your account. Not a shared key — your key. Mathematically impossible for us to decrypt without your credentials.",
+    body: "Each formulation is encrypted with a unique key derived from your account — not a shared key. Mathematically impossible for us to decrypt without your credentials.",
   },
   {
     Icon: EyeOffIcon,
     title: "Zero-Knowledge Architecture",
-    body: "We store only encrypted bytes and metadata. The platform has no access to formulation content — only you do. This is architectural, not a policy promise.",
+    body: "We store only encrypted bytes and metadata. The platform has no access to formulation content — only you do.",
   },
   {
     Icon: ShieldIcon,
     title: "You Always Own Your Data",
-    body: "Export your formulations at any time in full. If you leave, your data leaves with you. No lock-in, no retention.",
+    body: "Export your formulations at any time in full. If you leave, your data leaves with you.",
   },
 ]
 

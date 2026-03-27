@@ -587,7 +587,7 @@ export function FeatureShowcase() {
         <FeatureRow
           label="BRIEF INTELLIGENCE"
           title="The platform flags problems before you generate."
-          body="As you build your brief, the Live Intelligence panel surfaces tensions in real time. Ecocert targets limiting your preservative options. China NMPA conflicts with EU-permitted UV filters. Market co-occurrence patterns from 550,000 products. Regulatory gaps surfaced before a single ingredient is committed."
+          body="As you build your brief, the Live Intelligence panel surfaces tensions in real time. Ecocert targets, China NMPA conflicts, market co-occurrence patterns from 550,000 products — all flagged before a single ingredient is committed."
           bullets={[
             "Real-time regulatory conflict detection",
             "Market corpus intelligence as you type",
@@ -599,7 +599,7 @@ export function FeatureShowcase() {
         <FeatureRow
           label="INCI FORMULATION OUTPUT"
           title="Phase-structured. Regulatory-validated. Ready for the bench."
-          body="Every formula output is INCI-only — no brand names, no supplier bias. Phase A through D clearly separated. Processing protocol with critical control points flagged. Confidence scores across stability, performance, and regulatory safety. Regulatory compliance status for every target market."
+          body="Every output is INCI-only — no brand names, no supplier bias. Phase-structured with critical control points flagged and confidence scores across stability, performance, and regulatory safety for every target market."
           bullets={[
             "INCI-only output — zero supplier bias",
             "Phase-structured processing protocol",
@@ -612,7 +612,7 @@ export function FeatureShowcase() {
         <FeatureRow
           label="FORMULATION PARTNER"
           title="Paste a failing formula. Get a ranked diagnosis."
-          body="Describe an emulsion breaking at 40°C. Get three ranked root causes with probability scores, cross-referenced against 2,573 similar systems in the knowledge base. Fix recommendations included. The senior colleague you can consult at any hour."
+          body="Describe an emulsion breaking at 40°C. Get three ranked root causes with probability scores, cross-referenced against 2,573 similar systems in the knowledge base. Fix recommendations included."
           bullets={[
             "Failure mode diagnosis ranked by probability",
             "Substitution engine for discontinued ingredients",

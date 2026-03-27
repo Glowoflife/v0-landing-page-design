@@ -112,7 +112,7 @@ const steps = [
   {
     number: "03",
     title: "Everything you need to move forward",
-    body: "Confidence scores. Regulatory traffic lights across target markets. Market intelligence from 550,000 products. Claims substantiation evidence. Testing protocol by instrument and method. One document. Ready for the lab.",
+    body: "Confidence scores, regulatory traffic lights, market intelligence from 550,000 products, and claims substantiation evidence. Testing protocol by instrument and method. One document — ready for the lab.",
     detail: "Stability 82% · Performance 91% · Regulatory 76%",
   },
 ]

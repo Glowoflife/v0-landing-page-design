@@ -58,8 +58,8 @@ export function Conversion({ onRegisterClick, onSubscribeClick }: ConversionProp
           }}
         >
           Registration is free — no credit card, no commitment. When you&apos;re
-          ready to explore a subscription, we&apos;ll walk you through your options
-          personally, with sample reports so you can decide with full information.
+          ready to subscribe, we&apos;ll walk you through your options personally
+          with sample reports so you can decide with full information.
         </p>
 
         {/* Two path cards */}

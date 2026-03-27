@@ -118,8 +118,8 @@ export function DataCorpus() {
           }}
         >
           This corpus took years to assemble. It is the foundation that makes
-          every formulation, every market intelligence suggestion, and every
-          regulatory check meaningful — not generic.
+          every formulation, market intelligence suggestion, and regulatory check
+          meaningful — not generic.
         </p>
       </div>
     </section>

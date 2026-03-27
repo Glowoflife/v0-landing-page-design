@@ -41,23 +41,8 @@ export function TheProblem() {
           >
             Professional formulators still navigate regulatory requirements
             across PDFs and spreadsheets. Supplier data lives in disconnected
-            portals. Market intelligence requires expensive subscriptions. And
-            when something goes wrong in stability testing, you start over.
-          </p>
-          <p
-            style={{
-              fontSize: 16,
-              color: "#374151",
-              lineHeight: 1.8,
-              maxWidth: 480,
-              fontFamily: "var(--font-inter)",
-              marginTop: 16,
-              marginBottom: 0,
-            }}
-          >
-            The average cosmetic development cycle takes 18–24 months. Most of
-            that time is spent finding, validating, and reconciling information
-            that already exists somewhere.
+            portals. When something goes wrong in stability testing, you start
+            over.
           </p>
 
           {/* Problem list */}
