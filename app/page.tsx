@@ -1,16 +1,44 @@
-export default function Home() {
+"use client"
+
+import { useState } from "react"
+import { Nav } from "@/components/nav"
+import { Hero } from "@/components/hero"
+import { TheProblem } from "@/components/the-problem"
+import { HowItWorks } from "@/components/how-it-works"
+import { FeatureShowcase } from "@/components/feature-showcase"
+import { Security } from "@/components/security"
+import { DataCorpus } from "@/components/data-corpus"
+import { Conversion } from "@/components/conversion"
+import { FinalCta } from "@/components/final-cta"
+import { RegisterModal, SubscribeModal } from "@/components/modals"
+
+export default function Page() {
+  const [registerOpen, setRegisterOpen] = useState(false)
+  const [subscribeOpen, setSubscribeOpen] = useState(false)
+
   return (
-    <div className="flex min-h-screen items-center justify-center font-sans">
-      <main className="flex w-full max-w-3xl flex-col items-center gap-8 px-6 py-16 text-center sm:items-start sm:text-left">
-        <div className="flex flex-col gap-4">
-          <h1 className="text-4xl font-bold tracking-tight">
-            Landing Page for theformulator.ai
-          </h1>
-          <p className="max-w-md text-lg text-muted-foreground">
-            To get started, send a prompt or modify this page directly.
-          </p>
-        </div>
-      </main>
-    </div>
-  );
+    <main>
+      <Nav onRegisterClick={() => setRegisterOpen(true)} />
+      <Hero onRegisterClick={() => setRegisterOpen(true)} />
+      <TheProblem />
+      <HowItWorks />
+      <FeatureShowcase />
+      <Security />
+      <DataCorpus />
+      <Conversion
+        onRegisterClick={() => setRegisterOpen(true)}
+        onSubscribeClick={() => setSubscribeOpen(true)}
+      />
+      <FinalCta onRegisterClick={() => setRegisterOpen(true)} />
+
+      <RegisterModal
+        open={registerOpen}
+        onClose={() => setRegisterOpen(false)}
+      />
+      <SubscribeModal
+        open={subscribeOpen}
+        onClose={() => setSubscribeOpen(false)}
+      />
+    </main>
+  )
 }
