@@ -10,15 +10,19 @@ import { Security } from "@/components/security"
 import { DataCorpus } from "@/components/data-corpus"
 import { Conversion } from "@/components/conversion"
 import { FinalCta } from "@/components/final-cta"
-import { RegisterModal, SubscribeModal } from "@/components/modals"
+import { SignInModal, RegisterModal, SubscribeModal } from "@/components/modals"
 
 export default function Page() {
+  const [signInOpen, setSignInOpen] = useState(false)
   const [registerOpen, setRegisterOpen] = useState(false)
   const [subscribeOpen, setSubscribeOpen] = useState(false)
 
   return (
     <main>
-      <Nav onRegisterClick={() => setRegisterOpen(true)} />
+      <Nav
+        onSignInClick={() => setSignInOpen(true)}
+        onRegisterClick={() => setRegisterOpen(true)}
+      />
       <Hero onRegisterClick={() => setRegisterOpen(true)} />
       <TheProblem />
       <HowItWorks />
@@ -31,9 +35,15 @@ export default function Page() {
       />
       <FinalCta onRegisterClick={() => setRegisterOpen(true)} />
 
+      <SignInModal
+        open={signInOpen}
+        onClose={() => setSignInOpen(false)}
+        onSwitchToRegister={() => setRegisterOpen(true)}
+      />
       <RegisterModal
         open={registerOpen}
         onClose={() => setRegisterOpen(false)}
+        onSwitchToSignIn={() => setSignInOpen(true)}
       />
       <SubscribeModal
         open={subscribeOpen}
