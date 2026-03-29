@@ -4,10 +4,11 @@ import { useEffect, useState } from "react"
 import Image from "next/image"
 
 interface NavProps {
+  onSignInClick: () => void
   onRegisterClick: () => void
 }
 
-export function Nav({ onRegisterClick }: NavProps) {
+export function Nav({ onSignInClick, onRegisterClick }: NavProps) {
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
@@ -83,24 +84,43 @@ export function Nav({ onRegisterClick }: NavProps) {
           ))}
         </div>
 
-        {/* CTA */}
-        <button
-          onClick={onRegisterClick}
-          className="hidden md:inline-flex items-center cursor-pointer transition-opacity duration-150 hover:opacity-90"
-          style={{
-            background: "#D4A843",
-            color: "#0D1B2A",
-            height: 36,
-            padding: "0 18px",
-            fontSize: 14,
-            fontWeight: 500,
-            borderRadius: 6,
-            border: "none",
-            fontFamily: "var(--font-inter)",
-          }}
-        >
-          Register free →
-        </button>
+        {/* CTA buttons */}
+        <div className="hidden md:flex items-center" style={{ gap: 8 }}>
+          <button
+            onClick={onSignInClick}
+            className="cursor-pointer transition-opacity duration-150 hover:opacity-80"
+            style={{
+              background: "transparent",
+              color: "#0D1B2A",
+              height: 36,
+              padding: "0 16px",
+              fontSize: 13,
+              fontWeight: 500,
+              borderRadius: 8,
+              border: "1px solid #0D1B2A",
+              fontFamily: "var(--font-inter)",
+            }}
+          >
+            Sign in
+          </button>
+          <button
+            onClick={onRegisterClick}
+            className="cursor-pointer transition-opacity duration-150 hover:opacity-90"
+            style={{
+              background: "#D4A843",
+              color: "#0D1B2A",
+              height: 36,
+              padding: "0 16px",
+              fontSize: 13,
+              fontWeight: 500,
+              borderRadius: 8,
+              border: "none",
+              fontFamily: "var(--font-inter)",
+            }}
+          >
+            Request Access &rarr;
+          </button>
+        </div>
       </div>
     </nav>
   )
