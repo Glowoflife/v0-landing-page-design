@@ -37,7 +37,7 @@ export function Nav({ onRegisterClick }: NavProps) {
             alt="theformulator.ai"
             width={36}
             height={36}
-            style={{ width: 36, height: "auto" }}
+            style={{ width: "auto", height: "auto" }}
           />
           <span
             style={{
