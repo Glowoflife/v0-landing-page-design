@@ -30,7 +30,7 @@ export function SignInModal({ open, onClose, onSwitchToRegister }: SignInModalPr
     setLoading(true)
 
     try {
-      const res = await fetch("https://api.theformulator.ai/auth/login", {
+      const res = await fetch("/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
@@ -319,7 +319,7 @@ export function RegisterModal({ open, onClose, onSwitchToSignIn }: RegisterModal
     setLoading(true)
 
     try {
-      const res = await fetch("https://api.theformulator.ai/auth/register", {
+      const res = await fetch("/api/auth/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
