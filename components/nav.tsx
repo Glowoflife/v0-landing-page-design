@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import Image from "next/image"
 
 interface NavProps {
   onRegisterClick: () => void
@@ -30,28 +31,20 @@ export function Nav({ onRegisterClick }: NavProps) {
         style={{ maxWidth: 1100, margin: "0 auto" }}
       >
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 no-underline">
-          <span
-            className="inline-flex items-center justify-center text-white"
-            style={{
-              width: 28,
-              height: 28,
-              borderRadius: 6,
-              background: "#D4A843",
-              fontSize: 13,
-              fontWeight: 600,
-              fontFamily: "var(--font-inter)",
-              flexShrink: 0,
-            }}
-          >
-            tf
-          </span>
+        <a href="#" className="flex items-center no-underline" style={{ gap: 10 }}>
+          <Image
+            src="/logo.svg"
+            alt="theformulator.ai"
+            width={36}
+            height={36}
+            style={{ width: 36, height: "auto" }}
+          />
           <span
             style={{
-              color: "#0D1B2A",
-              fontSize: 15,
+              fontFamily: "Inter, sans-serif",
               fontWeight: 500,
-              fontFamily: "var(--font-inter)",
+              fontSize: 16,
+              color: "#D4A843",
               letterSpacing: "-0.01em",
             }}
           >
