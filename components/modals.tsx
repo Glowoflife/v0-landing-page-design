@@ -20,6 +20,7 @@ export function SignInModal({ open, onClose, onSwitchToRegister }: SignInModalPr
   const [showPassword, setShowPassword] = useState(false)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
+  const [forgotPassword, setForgotPassword] = useState(false)
 
   if (!open) return null
 
@@ -130,7 +131,7 @@ export function SignInModal({ open, onClose, onSwitchToRegister }: SignInModalPr
         </p>
 
         {/* Error */}
-        {error && (
+        {!forgotPassword && error && (
           <div
             style={{
               background: "#FEF2F2",
@@ -196,6 +197,20 @@ export function SignInModal({ open, onClose, onSwitchToRegister }: SignInModalPr
                 {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
               </button>
             </div>
+            <p
+              style={{
+                fontSize: 11,
+                color: "#9CA3AF",
+                textAlign: "right",
+                cursor: "pointer",
+                marginTop: 4,
+                marginBottom: 0,
+                fontFamily: "var(--font-inter)",
+              }}
+              onClick={() => setForgotPassword(true)}
+            >
+              Forgot password?
+            </p>
           </div>
 
           {/* Submit */}
@@ -480,7 +495,57 @@ export function RegisterModal({ open, onClose, onSwitchToSignIn }: RegisterModal
               </div>
             )}
 
-            <form onSubmit={handleSubmit} className="flex flex-col" style={{ gap: 16 }}>
+        {/* Forgot password view */}
+        {forgotPassword && (
+          <div style={{ paddingTop: 8 }}>
+            <h3
+              style={{
+                fontFamily: "var(--font-inter)",
+                fontSize: 16,
+                fontWeight: 600,
+                color: "#0D1B2A",
+                margin: "0 0 10px",
+              }}
+            >
+              Password Reset
+            </h3>
+            <p
+              style={{
+                fontSize: 13,
+                color: "#6B7280",
+                fontFamily: "var(--font-inter)",
+                lineHeight: 1.6,
+                margin: "0 0 16px",
+              }}
+            >
+              During alpha, password resets are handled manually. Email{" "}
+              <a
+                href="mailto:zubin@theformulator.ai"
+                style={{ color: "#0D1B2A", textDecoration: "underline" }}
+              >
+                zubin@theformulator.ai
+              </a>{" "}
+              and we&apos;ll reset your password within the hour.
+            </p>
+            <button
+              type="button"
+              onClick={() => setForgotPassword(false)}
+              style={{
+                background: "none",
+                border: "none",
+                color: "#D4A843",
+                cursor: "pointer",
+                fontSize: 13,
+                fontFamily: "var(--font-inter)",
+                padding: 0,
+              }}
+            >
+              Back to sign in &rarr;
+            </button>
+          </div>
+        )}
+
+        <form onSubmit={handleSubmit} className="flex flex-col" style={{ gap: 16, display: forgotPassword ? "none" : undefined }}>
               {/* Full Name */}
               <div>
                 <label style={labelStyle}>FULL NAME</label>
