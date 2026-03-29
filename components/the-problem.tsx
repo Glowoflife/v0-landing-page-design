@@ -27,7 +27,7 @@ export function TheProblem() {
             }}
             className="text-balance"
           >
-            Formulation development hasn&apos;t changed in 30 years.
+            Formulation development hasn&apos;t changed in decades.
           </h2>
           <p
             style={{

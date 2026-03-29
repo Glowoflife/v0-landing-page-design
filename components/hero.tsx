@@ -118,17 +118,43 @@ export function Hero({ onRegisterClick }: HeroProps) {
         </div>
 
         {/* Social proof */}
-        <p
-          style={{
-            marginTop: 24,
-            fontSize: 13,
-            color: "#9CA3AF",
-            fontFamily: "var(--font-inter)",
-          }}
+        <div
+          className="flex flex-wrap items-center justify-center"
+          style={{ gap: 8, marginTop: 24 }}
         >
-          550,000+ marketed products · 23,500+ reference formulations · 13
-          regulatory markets · 2,400+ CIR safety assessments
-        </p>
+          {[
+            "550,000+ marketed products",
+            "23,500+ reference formulations",
+            "13 regulatory markets",
+            "2,400+ CIR safety assessments",
+          ].map((badge) => (
+            <span
+              key={badge}
+              style={{
+                border: "1px solid #E5E7EB",
+                borderRadius: 20,
+                padding: "6px 14px",
+                fontSize: 12,
+                color: "#374151",
+                fontFamily: "var(--font-inter)",
+              }}
+            >
+              {badge}
+            </span>
+          ))}
+          <span
+            style={{
+              border: "1px solid #E5E7EB",
+              borderRadius: 20,
+              padding: "6px 14px",
+              fontSize: 12,
+              color: "#374151",
+              fontFamily: "var(--font-inter)",
+            }}
+          >
+            Supplier-Agnostic<sup style={{ color: "#D4A843" }}>*</sup>
+          </span>
+        </div>
 
         {/* App mockup */}
         <div

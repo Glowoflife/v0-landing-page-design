@@ -230,6 +230,30 @@ export function Security() {
           ))}
         </div>
 
+        {/* Intelligence by Claude badge */}
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: 24,
+          }}
+        >
+          <span
+            style={{
+              border: "1px solid rgba(255,255,255,0.15)",
+              borderRadius: 20,
+              padding: "8px 16px",
+              fontSize: 12,
+              color: "#D4A843",
+              letterSpacing: "0.05em",
+              fontFamily: "var(--font-inter)",
+              background: "transparent",
+            }}
+          >
+            ✦ Intelligence by Claude · Anthropic
+          </span>
+        </div>
+
         {/* Bottom statement */}
         <p
           style={{
