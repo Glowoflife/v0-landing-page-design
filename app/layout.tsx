@@ -26,6 +26,9 @@ export const metadata: Metadata = {
   description:
     'From brief to regulatory-compliant formulation in minutes. Built on the deepest cosmetic knowledge base ever assembled.',
   generator: 'v0.app',
+  icons: {
+    icon: '/logo.svg',
+  },
 }
 
 export default function RootLayout({
