@@ -290,7 +290,7 @@ function AppMockup() {
               fontFamily: "var(--font-inter)",
             }}
           >
-            Good morning, Jeevan.
+            Good morning, Andrea.
           </p>
           <p
             style={{
