@@ -1,5 +1,7 @@
 "use client"
 
+import { Bell, Zap } from "lucide-react"
+
 interface HeroProps {
   onRegisterClick: () => void
 }
@@ -236,6 +238,7 @@ function AppMockup() {
         </span>
         <div className="flex items-center" style={{ gap: 10 }}>
           <span
+            className="inline-flex items-center"
             style={{
               fontSize: 11,
               color: "#D4A843",
@@ -243,12 +246,14 @@ function AppMockup() {
               border: "1px solid rgba(212,168,67,0.25)",
               borderRadius: 20,
               padding: "2px 8px",
+              gap: 4,
               fontFamily: "var(--font-inter)",
             }}
           >
-            ⚡ 27 / 40 credits
+            <Zap size={10} />
+            27 / 40 credits
           </span>
-          <span style={{ color: "#6B7280", fontSize: 14 }}>🔔</span>
+          <Bell size={14} color="#6B7280" />
           <span
             style={{
               width: 26,

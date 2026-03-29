@@ -155,10 +155,10 @@ export function DataCorpus() {
             marginRight: "auto",
           }}
         >
-          Sources include: Ernest Flick (all 8 volumes) · Croda · BASF ·
-          INCIDecoder · Innova market intelligence · UL Prospector · Knowde ·
-          CIR safety assessments · EUR-Lex · ECHA · SCCS · MHLW Japan · NMPA
-          China · PubMed
+          Sources include: Thousands of formulations with stability data ·
+          Thousands of INCI with complete technical information ·
+          CIR safety assessments · EUR-Lex · ECHA · SCCS ·
+          MHLW Japan · NMPA China · PubMed · MOCRA · CDSCO
         </p>
 
         <p
@@ -194,11 +194,10 @@ const markets = [
   { flag: "🇲🇾", name: "Malaysia", full: false },
   { flag: "🇸🇬", name: "Singapore", full: false },
   { flag: "🇧🇷", name: "Brazil", full: false },
-  { flag: "🇦🇪", name: "UAE", full: false },
 ]
 
 const stats = [
-  { value: "550,000+", label: "Marketed products analysed" },
+  { value: "561,000+", label: "Marketed products analysed" },
   { value: "23,500+", label: "Reference formulations" },
   { value: "24,000+", label: "Ingredients with safety scoring" },
   { value: "13", label: "Regulatory markets" },
