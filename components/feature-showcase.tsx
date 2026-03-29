@@ -1,5 +1,6 @@
 import { SectionLabelCentered } from "@/components/section-label"
 import { SectionLabel } from "@/components/section-label"
+import { Shield } from "lucide-react"
 
 function FeatureRow({
   label,
@@ -599,7 +600,7 @@ export function FeatureShowcase() {
         <FeatureRow
           label="INCI FORMULATION OUTPUT"
           title="Phase-structured. Regulatory-validated. Ready for the bench."
-          body="Every output is INCI-only — no brand names, no supplier bias. Phase-structured with critical control points flagged and confidence scores across stability, performance, and regulatory safety for every target market."
+          body="The format hasn't changed in decades — INCI-only, no brand names, no supplier bias. Phase-structured with critical control points flagged and confidence scores across stability, performance, and regulatory safety for every target market."
           bullets={[
             "INCI-only output — zero supplier bias",
             "Phase-structured processing protocol",
@@ -620,6 +621,64 @@ export function FeatureShowcase() {
           ]}
           mockup={<FormulationPartnerMockup />}
         />
+
+        {/* Supplier Agnostic feature card */}
+        <div
+          style={{
+            border: "1px solid #E5E7EB",
+            borderRadius: 8,
+            padding: "32px 40px",
+            background: "#F8F6F1",
+            display: "flex",
+            alignItems: "flex-start",
+            gap: 24,
+            marginBottom: 80,
+          }}
+        >
+          <div
+            style={{
+              width: 48,
+              height: 48,
+              borderRadius: "50%",
+              background: "#0D1B2A",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              flexShrink: 0,
+            }}
+          >
+            <Shield size={20} color="#D4A843" strokeWidth={1.5} />
+          </div>
+          <div>
+            <SectionLabel>PLATFORM INTEGRITY</SectionLabel>
+            <h3
+              style={{
+                fontFamily: "var(--font-playfair)",
+                fontSize: 24,
+                fontWeight: 400,
+                color: "#0D1B2A",
+                margin: "0 0 12px",
+                lineHeight: 1.3,
+              }}
+            >
+              No supplier relationships
+            </h3>
+            <p
+              style={{
+                fontSize: 15,
+                color: "#374151",
+                lineHeight: 1.8,
+                maxWidth: 640,
+                fontFamily: "var(--font-inter)",
+                margin: 0,
+              }}
+            >
+              Every ingredient recommendation is ranked by performance data,
+              market frequency, and regulatory status — not commercial
+              agreements. No supplier pays to influence your formulation output.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   )

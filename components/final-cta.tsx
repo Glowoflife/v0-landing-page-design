@@ -215,6 +215,33 @@ export function FinalCta({ onRegisterClick }: FinalCtaProps) {
             )
           )}
         </div>
+        <div
+          style={{
+            borderTop: "1px solid rgba(255,255,255,0.08)",
+            paddingTop: 20,
+            marginTop: 20,
+            maxWidth: 600,
+            marginLeft: "auto",
+            marginRight: "auto",
+          }}
+        >
+          <p
+            style={{
+              textAlign: "center",
+              fontSize: 11,
+              color: "#9CA3AF",
+              fontStyle: "italic",
+              fontFamily: "var(--font-inter)",
+              lineHeight: 1.7,
+              margin: 0,
+            }}
+          >
+            *theformulator.ai has no commercial relationships with ingredient
+            suppliers. Ingredient recommendations are ranked by performance
+            data, market frequency, and regulatory compliance — never by
+            commercial agreements. Platform neutrality is architectural.
+          </p>
+        </div>
         <p
           style={{
             textAlign: "center",
