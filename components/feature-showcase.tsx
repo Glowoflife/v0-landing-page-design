@@ -624,42 +624,22 @@ export function FeatureShowcase() {
 
         {/* Supplier Agnostic feature card */}
         <div
-          style={{
-            border: "1px solid #E5E7EB",
-            borderRadius: 8,
-            padding: "32px 40px",
-            background: "#F8F6F1",
-            display: "flex",
-            alignItems: "flex-start",
-            gap: 24,
-            marginBottom: 80,
-          }}
+          className="flex flex-col md:flex-row items-center"
+          style={{ gap: 60, marginBottom: 80 }}
         >
-          <div
-            style={{
-              width: 48,
-              height: 48,
-              borderRadius: "50%",
-              background: "#0D1B2A",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              flexShrink: 0,
-            }}
-          >
-            <Shield size={20} color="#D4A843" strokeWidth={1.5} />
-          </div>
-          <div>
+          {/* Text — matches sibling FeatureRow text column */}
+          <div style={{ flex: "0 0 45%", maxWidth: "45%" }} className="w-full md:w-auto">
             <SectionLabel>PLATFORM INTEGRITY</SectionLabel>
             <h3
               style={{
                 fontFamily: "var(--font-playfair)",
-                fontSize: 24,
+                fontSize: 28,
                 fontWeight: 400,
                 color: "#0D1B2A",
-                margin: "0 0 12px",
+                margin: "0 0 16px",
                 lineHeight: 1.3,
               }}
+              className="text-balance"
             >
               No supplier relationships
             </h3>
@@ -668,7 +648,7 @@ export function FeatureShowcase() {
                 fontSize: 15,
                 color: "#374151",
                 lineHeight: 1.8,
-                maxWidth: 640,
+                maxWidth: 440,
                 fontFamily: "var(--font-inter)",
                 margin: 0,
               }}
@@ -677,6 +657,55 @@ export function FeatureShowcase() {
               market frequency, and regulatory status — not commercial
               agreements. No supplier pays to influence your formulation output.
             </p>
+          </div>
+
+          {/* Right column — icon + accent box, matches sibling mockup column */}
+          <div
+            style={{ flex: 1 }}
+            className="w-full md:w-auto flex items-center justify-center"
+          >
+            <div
+              style={{
+                border: "1px solid #E5E7EB",
+                borderRadius: 8,
+                padding: "40px 48px",
+                background: "#F8F6F1",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                gap: 16,
+                width: "100%",
+              }}
+            >
+              <div
+                style={{
+                  width: 56,
+                  height: 56,
+                  borderRadius: "50%",
+                  background: "#0D1B2A",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Shield size={24} color="#D4A843" strokeWidth={1.5} />
+              </div>
+              <p
+                style={{
+                  fontSize: 14,
+                  color: "#374151",
+                  textAlign: "center",
+                  fontFamily: "var(--font-inter)",
+                  lineHeight: 1.7,
+                  maxWidth: 280,
+                  margin: 0,
+                }}
+              >
+                Ingredient rankings are determined by data — market frequency,
+                stability performance, and regulatory status. Never by
+                commercial agreements.
+              </p>
+            </div>
           </div>
         </div>
       </div>
