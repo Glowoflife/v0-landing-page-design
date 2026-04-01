@@ -105,14 +105,14 @@ const steps = [
   {
     number: "02",
     title: "Get 3 variants in minutes",
-    body: "The platform queries 23,500+ reference formulations, 550,000+ marketed products, and 13 regulatory databases simultaneously. Outputs 3 distinct INCI-only formulations with phase-structured processing protocols and 3-dimensional confidence scores.",
+    body: "The platform queries 23,500+ reference formulations, 561,000+ marketed products, and 13 regulatory databases simultaneously. Outputs 3 distinct INCI-only formulations with phase-structured processing protocols and 3-dimensional confidence scores.",
     detail:
       "Aqua · Glycerin · Niacinamide · Centella Asiatica Extract · Bakuchiol · Phenoxyethanol, Ethylhexylglycerin",
   },
   {
     number: "03",
     title: "Everything you need to move forward",
-    body: "Confidence scores, regulatory traffic lights, market intelligence from 550,000 products, and claims substantiation evidence. Testing protocol by instrument and method. One document — ready for the lab.",
+    body: "Confidence scores, regulatory traffic lights, market intelligence from 561,000 products, and claims substantiation evidence. Testing protocol by instrument and method. One document — ready for the lab.",
     detail: "Stability 82% · Performance 91% · Regulatory 76%",
   },
 ]
