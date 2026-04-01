@@ -52,7 +52,7 @@ export function TheProblem() {
           >
             {[
               "Regulatory limits change across 13 markets — no single source of truth",
-              "550,000 marketed products contain co-occurrence intelligence that nobody has organised",
+              "561,000+ marketed products contain co-occurrence intelligence that nobody has organised",
               "CIR safety data, supplier TDS, research literature — all disconnected",
               "Every failed stability batch is a reformulation from scratch",
             ].map((item) => (
