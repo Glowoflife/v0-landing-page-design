@@ -224,7 +224,7 @@ export function Conversion({ onRegisterClick, onSubscribeClick }: ConversionProp
             fontFamily: "var(--font-inter)",
           }}
         >
-          Subscription plans from ₹10,000/month · USD 120/month
+          Subscription plans from ₹10,000/month · USD 199/month
         </p>
 
         {/* Credit consumption explainer */}
