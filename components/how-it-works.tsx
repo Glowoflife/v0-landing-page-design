@@ -22,7 +22,7 @@ export function HowItWorks() {
               margin: 0,
             }}
           >
-            Brief. Generate. Ship.
+            Brief. Generate. Test. Ship.
           </h2>
         </div>
 
