@@ -213,6 +213,45 @@ export function Conversion({ onRegisterClick, onSubscribeClick }: ConversionProp
           </div>
         </div>
 
+        {/* Starting price */}
+        <p
+          style={{
+            textAlign: "center",
+            marginTop: 32,
+            fontSize: 14,
+            color: "#0D1B2A",
+            fontWeight: 500,
+            fontFamily: "var(--font-inter)",
+          }}
+        >
+          Subscription plans from ₹10,000/month · USD 199/month
+        </p>
+
+        {/* Credit consumption explainer */}
+        <div
+          style={{
+            textAlign: "center",
+            marginTop: 20,
+            fontSize: 13,
+            color: "#6B7280",
+            lineHeight: 2.0,
+            fontFamily: "var(--font-inter)",
+            maxWidth: 520,
+            marginLeft: "auto",
+            marginRight: "auto",
+          }}
+        >
+          <p style={{ margin: 0 }}>
+            <span style={{ fontFamily: "var(--font-jetbrains)", color: "#0D1B2A" }}>Quick Formula — 1 credit</span> — 2 variants included
+          </p>
+          <p style={{ margin: 0 }}>
+            <span style={{ fontFamily: "var(--font-jetbrains)", color: "#0D1B2A" }}>Intelligence Brief — 3 credits</span> — 3 variants, safety overview, market intelligence
+          </p>
+          <p style={{ margin: 0 }}>
+            <span style={{ fontFamily: "var(--font-jetbrains)", color: "#0D1B2A" }}>Dossier — 5 credits</span> — 3 variants, stability protocol, manufacturing brief, research citations
+          </p>
+        </div>
+
         <p
           style={{
             textAlign: "center",

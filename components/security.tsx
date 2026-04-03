@@ -322,7 +322,7 @@ const pillars = [
   {
     Icon: LockIcon,
     title: "Per-User AES-256 Encryption",
-    body: "Each formulation is encrypted with a unique key derived from your account — not a shared key. Mathematically impossible for us to decrypt without your credentials.",
+    body: "Customer documents are encrypted using customer-controlled credentials, preventing plaintext access by platform administrators.",
   },
   {
     Icon: EyeOffIcon,

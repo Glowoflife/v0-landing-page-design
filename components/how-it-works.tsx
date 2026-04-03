@@ -98,21 +98,26 @@ export function HowItWorks() {
 const steps = [
   {
     number: "01",
-    title: "Tell us what you need",
-    body: "A structured 5-layer interview builds a complete picture before anything is generated. Product type, target markets, regulatory requirements, must-include actives, technical constraints. The platform surfaces tensions before you generate — not after.",
+    title: "Define the brief",
+    body: "Enter product format, claims, target markets, sensory goals, and technical constraints across 5 structured layers.",
     detail: "sulphate free · no silicones · EU + India · brightening",
   },
   {
     number: "02",
-    title: "Get 3 variants in minutes",
-    body: "The platform queries 23,500+ reference formulations, 561,000+ marketed products, and 13 regulatory databases simultaneously. Outputs 3 distinct INCI-only formulations with phase-structured processing protocols and 3-dimensional confidence scores.",
-    detail:
-      "Aqua · Glycerin · Niacinamide · Centella Asiatica Extract · Bakuchiol · Phenoxyethanol, Ethylhexylglycerin",
+    title: "Generate formulation routes",
+    body: "Receive structured prototype formulations with INCI-only ingredient lists, phase-by-phase processing, and concentration rationale.",
+    detail: "Aqua · Glycerin · Niacinamide · Centella Asiatica Extract · Bakuchiol",
   },
   {
     number: "03",
-    title: "Everything you need to move forward",
-    body: "Confidence scores, regulatory traffic lights, market intelligence from 561,000 products, and claims substantiation evidence. Testing protocol by instrument and method. One document — ready for the lab.",
+    title: "Screen for fit and risk",
+    body: "Evaluate ingredient suitability, market-specific regulatory constraints, and formulation confidence indicators across 16 markets.",
     detail: "Stability 82% · Performance 91% · Regulatory 76%",
+  },
+  {
+    number: "04",
+    title: "Refine and troubleshoot",
+    body: "Compare variants, diagnose instability concerns, and iterate toward a stronger starting formula with the Formulation Partner.",
+    detail: "emulsion break · pH drift · preservative efficacy",
   },
 ]

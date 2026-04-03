@@ -767,6 +767,25 @@ export function FeatureShowcase() {
           panel={<INCIPanel />}
         />
 
+        {/* Confidence scores explainer */}
+        <p
+          style={{
+            fontSize: 12,
+            color: "#9CA3AF",
+            fontStyle: "italic",
+            maxWidth: 560,
+            lineHeight: 1.7,
+            fontFamily: "var(--font-inter)",
+            textAlign: "center",
+            margin: "-40px auto 40px",
+          }}
+        >
+          Confidence indicators are generated using internal evaluation logic across
+          ingredient compatibility, known formulation patterns, regulatory constraints,
+          and category fit. They support expert review — they do not replace laboratory
+          validation or formal safety assessment.
+        </p>
+
         {/* Row 4 — Visual LEFT, Text RIGHT */}
         <AlternatingRow
           tag="Platform Integrity"
