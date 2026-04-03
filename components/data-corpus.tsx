@@ -149,7 +149,7 @@ export function DataCorpus() {
               fontFamily: "var(--font-inter)",
             }}
           >
-            Green — full coverage · Amber — expanding coverage
+            Green — full regulatory coverage · Amber — coverage expanding in 2026
           </p>
         </div>
 
