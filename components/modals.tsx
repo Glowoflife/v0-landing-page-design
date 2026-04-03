@@ -45,9 +45,11 @@ export function SignInModal({ open, onClose, onSwitchToRegister }: SignInModalPr
       }
 
       // Success — store tokens and redirect
-      localStorage.setItem("tf_access_token", data.access_token)
-      localStorage.setItem("tf_refresh_token", data.refresh_token)
-      window.location.href = "https://app.theformulator.ai"
+      const params = new URLSearchParams({
+      access_token: data.access_token,
+      refresh_token: data.refresh_token
+      })
+      window.location.href = 'https://app.theformulator.ai/auth/callback?' + params.toString()
     } catch {
       setError("Network error. Please check your connection.")
       setLoading(false)
