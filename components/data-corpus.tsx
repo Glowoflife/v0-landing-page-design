@@ -46,42 +46,54 @@ export function DataCorpus() {
           }}
           className="text-balance"
         >
-          The most comprehensive cosmetic formulation knowledge base ever
-          assembled.
+          One of the most comprehensive dedicated knowledge systems for cosmetic
+          formulation and compliance.
         </h2>
 
         {/* Stats grid */}
         <div
-          className="grid grid-cols-2 md:grid-cols-3"
-          style={{ gap: 40, marginTop: 56, maxWidth: 800, marginLeft: "auto", marginRight: "auto" }}
+          className="flex flex-col"
+          style={{ gap: 32, marginTop: 56, maxWidth: 720, marginLeft: "auto", marginRight: "auto" }}
         >
           {stats.map((s) => (
-            <div key={s.label} className="flex flex-col items-center">
-              <span
-                style={{
-                  fontFamily: "var(--font-playfair)",
-                  fontSize: "clamp(36px, 5vw, 52px)",
-                  color: "#D4A843",
-                  fontWeight: 400,
-                  lineHeight: 1,
-                }}
-              >
-                {s.value}
-              </span>
-              <span
+            <div key={s.label} style={{ textAlign: "center" }}>
+              <div className="flex items-baseline justify-center" style={{ gap: 8 }}>
+                <span
+                  style={{
+                    fontFamily: "var(--font-playfair)",
+                    fontSize: "clamp(32px, 4vw, 44px)",
+                    color: "#D4A843",
+                    fontWeight: 400,
+                    lineHeight: 1,
+                  }}
+                >
+                  {s.value}
+                </span>
+                <span
+                  style={{
+                    fontFamily: "var(--font-inter)",
+                    fontSize: 15,
+                    color: "rgba(255,255,255,0.8)",
+                    fontWeight: 500,
+                  }}
+                >
+                  {s.label}
+                </span>
+              </div>
+              <p
                 style={{
                   fontFamily: "var(--font-inter)",
                   fontSize: 13,
-                  color: "rgba(255,255,255,0.7)",
-                  marginTop: 6,
-                  textTransform: "uppercase",
-                  letterSpacing: "0.05em",
-                  textAlign: "center",
-                  lineHeight: 1.4,
+                  color: "rgba(255,255,255,0.5)",
+                  marginTop: 4,
+                  lineHeight: 1.5,
+                  maxWidth: 560,
+                  marginLeft: "auto",
+                  marginRight: "auto",
                 }}
               >
-                {s.label}
-              </span>
+                {s.subtext}
+              </p>
             </div>
           ))}
         </div>
@@ -190,17 +202,40 @@ const markets = [
   { flag: "🇮🇳", name: "India", full: true },
   { flag: "🇰🇷", name: "Korea", full: true },
   { flag: "🇨🇦", name: "Canada", full: true },
-  { flag: "🇦🇺", name: "Australia", full: false },
-  { flag: "🇲🇾", name: "Malaysia", full: false },
+  { flag: "🇦🇺", name: "Australia", full: true },
+  { flag: "🇧🇷", name: "Brazil", full: true },
+  { flag: "🇹🇭", name: "Thailand", full: true },
+  { flag: "🇲🇾", name: "Malaysia", full: true },
   { flag: "🇸🇬", name: "Singapore", full: false },
-  { flag: "🇧🇷", name: "Brazil", full: false },
+  { flag: "🇮🇩", name: "Indonesia", full: false },
+  { flag: "🇻🇳", name: "Vietnam", full: false },
+  { flag: "🇵🇭", name: "Philippines", full: false },
 ]
 
 const stats = [
-  { value: "561,000+", label: "Marketed products analysed" },
-  { value: "23,500+", label: "Reference formulations" },
-  { value: "24,000+", label: "Ingredients with safety scoring" },
-  { value: "13", label: "Regulatory markets" },
-  { value: "3,073", label: "Peer-reviewed research papers" },
-  { value: "2,400+", label: "CIR safety assessments" },
+  {
+    value: "561,000+",
+    label: "marketed products",
+    subtext: "ingredient co-occurrence intelligence across skin care, hair care, sun care, and personal care",
+  },
+  {
+    value: "24,000+",
+    label: "cosmetic ingredients",
+    subtext: "ingredient-level data supporting selection, screening, and compatibility checking",
+  },
+  {
+    value: "23,500+",
+    label: "reference formulations",
+    subtext: "historical prototype patterns to support generation and benchmarking",
+  },
+  {
+    value: "2,400+",
+    label: "CIR safety assessments",
+    subtext: "peer-reviewed safety data integrated at ingredient level",
+  },
+  {
+    value: "16",
+    label: "regulatory markets",
+    subtext: "EU, UK, USA, China, Japan, Korea, India, Australia, Canada, Brazil, Thailand, Malaysia, and more",
+  },
 ]

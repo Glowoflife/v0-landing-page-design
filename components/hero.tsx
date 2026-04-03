@@ -54,8 +54,8 @@ export function Hero({ onRegisterClick }: HeroProps) {
           }}
           className="text-balance"
         >
-          The world&apos;s most comprehensive cosmetic formulation intelligence
-          platform.
+          Generate bench-ready cosmetic formulations with built-in regulatory
+          intelligence.
         </h1>
 
         {/* Sub-headline */}
@@ -65,18 +65,36 @@ export function Hero({ onRegisterClick }: HeroProps) {
             fontSize: 18,
             color: "#6B7280",
             fontWeight: 400,
-            maxWidth: 580,
+            maxWidth: 640,
             margin: "20px auto 0",
             lineHeight: 1.7,
           }}
         >
-          From brief to regulatory-compliant formulation in minutes.
+          theformulator.ai helps cosmetic formulators and innovation teams turn
+          product briefs into structured prototype formulations — with ingredient
+          guidance, regulatory screening across 16 markets, and formulation
+          troubleshooting built in.
+        </p>
+
+        {/* Not-for signal */}
+        <p
+          style={{
+            fontSize: 12,
+            color: "#9CA3AF",
+            fontStyle: "italic",
+            textAlign: "center",
+            marginTop: 12,
+            fontFamily: "var(--font-inter)",
+          }}
+        >
+          Designed for professional formulators and R&amp;D teams. Not a consumer
+          recipe tool.
         </p>
 
         {/* CTA pair */}
         <div
-          className="flex items-center justify-center flex-wrap"
-          style={{ gap: 16, marginTop: 36 }}
+          className="flex flex-col items-center"
+          style={{ gap: 8, marginTop: 36 }}
         >
           <button
             onClick={onRegisterClick}
@@ -93,27 +111,25 @@ export function Hero({ onRegisterClick }: HeroProps) {
               fontFamily: "var(--font-inter)",
             }}
           >
-            Register free →
+            Request Access →
           </button>
           <a
-            href="#how-it-works"
-            className="inline-flex items-center gap-1 transition-all"
+            href="#sample-output"
+            className="inline-flex items-center cursor-pointer transition-opacity hover:opacity-80"
             style={{
-              color: "#0D1B2A",
-              fontSize: 14,
+              height: 48,
+              padding: "0 28px",
+              fontSize: 15,
+              fontWeight: 500,
+              borderRadius: 6,
+              border: "1px solid #D4A843",
+              background: "transparent",
+              color: "#D4A843",
               fontFamily: "var(--font-inter)",
               textDecoration: "none",
             }}
-            onMouseEnter={(e) => {
-              (e.currentTarget as HTMLAnchorElement).style.textDecoration =
-                "underline"
-            }}
-            onMouseLeave={(e) => {
-              (e.currentTarget as HTMLAnchorElement).style.textDecoration =
-                "none"
-            }}
           >
-            See how it works ↓
+            See sample output →
           </a>
         </div>
 
@@ -123,9 +139,9 @@ export function Hero({ onRegisterClick }: HeroProps) {
           style={{ gap: 8, marginTop: 24 }}
         >
           {[
-            "550,000+ marketed products",
+            "561,000+ marketed products",
             "23,500+ reference formulations",
-            "13 regulatory markets",
+            "16 regulatory markets",
             "2,400+ CIR safety assessments",
           ].map((badge) => (
             <span

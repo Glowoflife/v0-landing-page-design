@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Nav } from "@/components/nav"
 import { Hero } from "@/components/hero"
+import { WhoItsFor } from "@/components/who-its-for"
 import { TheProblem } from "@/components/the-problem"
 import { HowItWorks } from "@/components/how-it-works"
 import { FeatureShowcase } from "@/components/feature-showcase"
@@ -24,6 +25,7 @@ export default function Page() {
         onRegisterClick={() => setRegisterOpen(true)}
       />
       <Hero onRegisterClick={() => setRegisterOpen(true)} />
+      <WhoItsFor />
       <TheProblem />
       <HowItWorks />
       <FeatureShowcase />
