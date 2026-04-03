@@ -497,57 +497,7 @@ export function RegisterModal({ open, onClose, onSwitchToSignIn }: RegisterModal
               </div>
             )}
 
-        {/* Forgot password view */}
-        {forgotPassword && (
-          <div style={{ paddingTop: 8 }}>
-            <h3
-              style={{
-                fontFamily: "var(--font-inter)",
-                fontSize: 16,
-                fontWeight: 600,
-                color: "#0D1B2A",
-                margin: "0 0 10px",
-              }}
-            >
-              Password Reset
-            </h3>
-            <p
-              style={{
-                fontSize: 13,
-                color: "#6B7280",
-                fontFamily: "var(--font-inter)",
-                lineHeight: 1.6,
-                margin: "0 0 16px",
-              }}
-            >
-              During alpha, password resets are handled manually. Email{" "}
-              <a
-                href="mailto:zubin@theformulator.ai"
-                style={{ color: "#0D1B2A", textDecoration: "underline" }}
-              >
-                zubin@theformulator.ai
-              </a>{" "}
-              and we&apos;ll reset your password within the hour.
-            </p>
-            <button
-              type="button"
-              onClick={() => setForgotPassword(false)}
-              style={{
-                background: "none",
-                border: "none",
-                color: "#D4A843",
-                cursor: "pointer",
-                fontSize: 13,
-                fontFamily: "var(--font-inter)",
-                padding: 0,
-              }}
-            >
-              Back to sign in &rarr;
-            </button>
-          </div>
-        )}
-
-        <form onSubmit={handleSubmit} className="flex flex-col" style={{ gap: 16, display: forgotPassword ? "none" : undefined }}>
+        <form onSubmit={handleSubmit} className="flex flex-col" style={{ gap: 16 }}>
               {/* Full Name */}
               <div>
                 <label style={labelStyle}>FULL NAME</label>
