@@ -6,6 +6,9 @@ import { Hero } from "@/components/hero"
 import { WhoItsFor } from "@/components/who-its-for"
 import { TheProblem } from "@/components/the-problem"
 import { HowItWorks } from "@/components/how-it-works"
+import { SeeWhatYouGet } from "@/components/see-what-you-get"
+import { EngineExplainer } from "@/components/engine-explainer"
+import { SafetyMethodology } from "@/components/safety-methodology"
 import { FeatureShowcase } from "@/components/feature-showcase"
 import { Security } from "@/components/security"
 import { DataCorpus } from "@/components/data-corpus"
@@ -28,6 +31,9 @@ export default function Page() {
       <WhoItsFor />
       <TheProblem />
       <HowItWorks />
+      <SeeWhatYouGet />
+      <EngineExplainer />
+      <SafetyMethodology />
       <FeatureShowcase />
       <Security />
       <DataCorpus />

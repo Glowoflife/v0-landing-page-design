@@ -3,6 +3,7 @@ import { Beaker, Lightbulb, ShieldCheck, Users } from "lucide-react"
 export function WhoItsFor() {
   return (
     <section
+      id="who-its-for"
       style={{
         background: "#ffffff",
         padding: "100px 24px",

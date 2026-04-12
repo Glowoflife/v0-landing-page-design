@@ -35,6 +35,14 @@ function CompliancePanel() {
     { code: "IN", status: "pass" },
     { code: "KR", status: "pass" },
     { code: "CA", status: "pass" },
+    { code: "AU", status: "pass" },
+    { code: "BR", status: "pass" },
+    { code: "TH", status: "pass" },
+    { code: "MY", status: "pass" },
+    { code: "SG", status: "pass" },
+    { code: "ID", status: "pass" },
+    { code: "VN", status: "pass" },
+    { code: "PH", status: "pass" },
   ]
   return (
     <div style={{ width: "100%", maxWidth: 340 }}>
@@ -48,7 +56,7 @@ function CompliancePanel() {
           fontWeight: 600,
         }}
       >
-        REGULATORY STATUS — 8 MARKETS
+        REGULATORY STATUS — 16 MARKETS
       </div>
       <div
         className="flex flex-wrap"
