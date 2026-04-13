@@ -153,7 +153,7 @@ export function FinalCta({ onRegisterClick }: FinalCtaProps) {
           >
             {[
               "No credit card required",
-              "Free account — explore the platform and run your first brief",
+              "Free account — 7-day trial, 6 credits included",
               "Subscribe at any time — sample reports sent before you commit",
             ].map((line) => (
               <div

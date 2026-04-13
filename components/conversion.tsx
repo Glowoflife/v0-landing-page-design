@@ -106,6 +106,18 @@ export function Conversion({ onRegisterClick, onSubscribeClick }: ConversionProp
             </h3>
             <p
               style={{
+                fontSize: 12,
+                color: "#D4A843",
+                fontWeight: 500,
+                marginTop: 4,
+                marginBottom: 0,
+                fontFamily: "var(--font-inter)",
+              }}
+            >
+              7-day trial · 6 credits included
+            </p>
+            <p
+              style={{
                 fontSize: 14,
                 color: "#6B7280",
                 lineHeight: 1.7,
@@ -114,9 +126,7 @@ export function Conversion({ onRegisterClick, onSubscribeClick }: ConversionProp
                 flex: 1,
               }}
             >
-              Register in 30 seconds. Explore the platform, run the brief
-              interview, and see what a generation looks like — before committing
-              to anything.
+              Register in 30 seconds. Get 6 credits to generate real formulations — enough for a Quick Formula and an Intelligence Brief, or six Quick Formulas. No credit card required.
             </p>
             <button
               onClick={onRegisterClick}
@@ -224,7 +234,7 @@ export function Conversion({ onRegisterClick, onSubscribeClick }: ConversionProp
             fontFamily: "var(--font-inter)",
           }}
         >
-          Subscription plans from ₹10,000/month · USD 199/month
+          Subscription plans from $199/month
         </p>
 
         {/* Credit consumption explainer */}
@@ -242,13 +252,16 @@ export function Conversion({ onRegisterClick, onSubscribeClick }: ConversionProp
           }}
         >
           <p style={{ margin: 0 }}>
-            <span style={{ fontFamily: "var(--font-jetbrains)", color: "#0D1B2A" }}>Quick Formula — 1 credit</span> — 2 variants included
+            <span style={{ fontFamily: "var(--font-jetbrains)", color: "#0D1B2A" }}>Quick Formula — 1 credit</span> — up to 2 variants
           </p>
           <p style={{ margin: 0 }}>
-            <span style={{ fontFamily: "var(--font-jetbrains)", color: "#0D1B2A" }}>Intelligence Brief — 3 credits</span> — 3 variants, safety overview, market intelligence
+            <span style={{ fontFamily: "var(--font-jetbrains)", color: "#0D1B2A" }}>Intelligence Brief — 3 credits</span> — up to 3 variants
           </p>
           <p style={{ margin: 0 }}>
-            <span style={{ fontFamily: "var(--font-jetbrains)", color: "#0D1B2A" }}>Dossier — 5 credits</span> — 3 variants, stability protocol, manufacturing brief, research citations
+            <span style={{ fontFamily: "var(--font-jetbrains)", color: "#0D1B2A" }}>Dossier — 5 credits</span> — up to 3 variants, stability protocol, manufacturing brief, research citations
+          </p>
+          <p style={{ margin: 0 }}>
+            <span style={{ fontFamily: "var(--font-jetbrains)", color: "#0D1B2A" }}>Formulation Partner — 1 credit per 5 exchanges</span>
           </p>
         </div>
 

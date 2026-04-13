@@ -86,9 +86,12 @@ export function Nav({ onSignInClick, onRegisterClick, defaultScrolled }: NavProp
 
   const handleLinkClick = useCallback(
     (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
-      e.preventDefault()
       setMenuOpen(false)
-      scrollTo(id)
+      if (window.location.pathname === "/") {
+        e.preventDefault()
+        scrollTo(id)
+      }
+      // else let href="/#id" navigate back to landing page
     },
     []
   )
@@ -108,12 +111,14 @@ export function Nav({ onSignInClick, onRegisterClick, defaultScrolled }: NavProp
         >
           {/* Logo */}
           <a
-            href="#"
+            href="/"
             className="flex items-center no-underline"
             style={{ gap: 10 }}
             onClick={(e) => {
-              e.preventDefault()
-              window.scrollTo({ top: 0, behavior: "smooth" })
+              if (window.location.pathname === "/") {
+                e.preventDefault()
+                window.scrollTo({ top: 0, behavior: "smooth" })
+              }
             }}
           >
             <Image
@@ -144,7 +149,7 @@ export function Nav({ onSignInClick, onRegisterClick, defaultScrolled }: NavProp
               return (
                 <a
                   key={link.label}
-                  href={link.href ?? `#${link.id}`}
+                  href={link.href ?? `/#${link.id}`}
                   onClick={link.href ? undefined : (e) => handleLinkClick(e, link.id!)}
                   className="transition-colors duration-150 no-underline"
                   style={{
@@ -243,7 +248,7 @@ export function Nav({ onSignInClick, onRegisterClick, defaultScrolled }: NavProp
               return (
                 <a
                   key={link.label}
-                  href={link.href ?? `#${link.id}`}
+                  href={link.href ?? `/#${link.id}`}
                   onClick={link.href ? undefined : (e) => handleLinkClick(e, link.id!)}
                   className="no-underline"
                   style={{
