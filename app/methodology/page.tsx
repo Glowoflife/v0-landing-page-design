@@ -607,11 +607,11 @@ export default function MethodologyPage() {
                   textTransform: "uppercase",
                 }}
               >
-                Sodium Lauryl Sulfate (SLS)
+                Phenoxyethanol
               </p>
               <DarkRadarChart
-                scores={[0, 0, 2, 1, 9, 0]}
-                ariaLabel="Radar chart: SLS safety profile — carcinogenicity 0, DART 0, sensitization 2, systemic toxicity 1, irritation 9, endocrine disruption 0"
+                scores={[0, 2, 5, 3, 4, 1]}
+                ariaLabel="Radar chart: Phenoxyethanol safety profile — carcinogenicity 0, DART 2, sensitization 5, systemic toxicity 3, irritation 4, endocrine disruption 1"
               />
               <p
                 style={{
@@ -623,7 +623,7 @@ export default function MethodologyPage() {
                   lineHeight: 1.7,
                 }}
               >
-                SLS — composite score of 3.0 (yellow band) is driven entirely by irritation. For a rinse-off shampoo with 30-second skin contact, the exposure-adjusted risk profile changes significantly. For a leave-on facial serum, this score demands attention.
+                Phenoxyethanol — the most widely used standalone preservative in cosmetics. Composite score of 2.5 (green band), but a sensitization score of 5.0 warrants attention for sensitive-skin formulations. EU restricts to 1.0% maximum — Japan applies different limits by product category.
               </p>
             </div>
           </div>
