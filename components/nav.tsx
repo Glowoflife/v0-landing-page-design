@@ -6,26 +6,28 @@ import Image from "next/image"
 interface NavProps {
   onSignInClick: () => void
   onRegisterClick: () => void
+  defaultScrolled?: boolean
 }
 
-const NAV_LINKS = [
+const NAV_LINKS: Array<{ label: string; id?: string; href?: string }> = [
   { label: "How It Works", id: "how-it-works" },
   { label: "Engine", id: "engine" },
   { label: "Safety", id: "safety" },
   { label: "Sample Reports", id: "sample-reports" },
   { label: "Data", id: "data" },
   { label: "Pricing", id: "pricing" },
+  { label: "Methodology", href: "/methodology" },
 ]
 
-const TRACKED_IDS = NAV_LINKS.map((l) => l.id)
+const TRACKED_IDS = NAV_LINKS.filter((l) => l.id).map((l) => l.id!)
 
 function scrollTo(id: string) {
   const el = document.getElementById(id)
   if (el) el.scrollIntoView({ behavior: "smooth" })
 }
 
-export function Nav({ onSignInClick, onRegisterClick }: NavProps) {
-  const [scrolled, setScrolled] = useState(false)
+export function Nav({ onSignInClick, onRegisterClick, defaultScrolled }: NavProps) {
+  const [scrolled, setScrolled] = useState(defaultScrolled ?? false)
   const [activeId, setActiveId] = useState<string | null>(null)
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -138,12 +140,12 @@ export function Nav({ onSignInClick, onRegisterClick }: NavProps) {
           {/* Center nav links — desktop */}
           <div className="hidden md:flex items-center" style={{ gap: 28 }}>
             {NAV_LINKS.map((link) => {
-              const isActive = activeId === link.id
+              const isActive = link.href ? false : activeId === link.id
               return (
                 <a
-                  key={link.id}
-                  href={`#${link.id}`}
-                  onClick={(e) => handleLinkClick(e, link.id)}
+                  key={link.label}
+                  href={link.href ?? `#${link.id}`}
+                  onClick={link.href ? undefined : (e) => handleLinkClick(e, link.id!)}
                   className="transition-colors duration-150 no-underline"
                   style={{
                     fontSize: 13,
@@ -237,12 +239,12 @@ export function Nav({ onSignInClick, onRegisterClick }: NavProps) {
         >
           <div style={{ padding: "16px 24px 20px" }}>
             {NAV_LINKS.map((link) => {
-              const isActive = activeId === link.id
+              const isActive = link.href ? false : activeId === link.id
               return (
                 <a
-                  key={link.id}
-                  href={`#${link.id}`}
-                  onClick={(e) => handleLinkClick(e, link.id)}
+                  key={link.label}
+                  href={link.href ?? `#${link.id}`}
+                  onClick={link.href ? undefined : (e) => handleLinkClick(e, link.id!)}
                   className="no-underline"
                   style={{
                     display: "block",
