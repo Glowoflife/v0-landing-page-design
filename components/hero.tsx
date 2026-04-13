@@ -55,7 +55,7 @@ export function Hero({ onRegisterClick }: HeroProps) {
           className="text-balance"
         >
           Generate bench-ready cosmetic formulations with built-in regulatory
-          intelligence.
+          intelligence across 16 global markets.
         </h1>
 
         {/* Sub-headline */}

@@ -31,6 +31,18 @@ export function TheProblem() {
           </h2>
           <p
             style={{
+              fontFamily: "var(--font-inter)",
+              fontSize: 18,
+              color: "#6B7280",
+              fontStyle: "italic",
+              lineHeight: 1.5,
+              margin: "-8px 0 24px",
+            }}
+          >
+            AI has transformed drug discovery. Cosmetic formulation is next.
+          </p>
+          <p
+            style={{
               fontSize: 16,
               color: "#374151",
               lineHeight: 1.8,
