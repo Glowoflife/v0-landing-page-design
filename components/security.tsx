@@ -48,8 +48,7 @@ export function Security() {
           }}
           className="text-balance"
         >
-          Your formulations are your most valuable trade secret. We treat them
-          that way.
+          Your Formulations Stay Private
         </h2>
 
         {/* Sub-copy */}
@@ -64,8 +63,9 @@ export function Security() {
             lineHeight: 1.7,
           }}
         >
-          Every formula you generate is encrypted with a key derived from your
-          account — before it touches our database. We cannot read your work.
+          Every formulation you generate is stored in your private workspace. No
+          one at theformulator.ai — including our team — can access your generated
+          formulations. Export or delete your data anytime.
         </p>
 
         {/* Three pillars */}
@@ -130,7 +130,7 @@ export function Security() {
             viewBox="0 0 560 80"
             width="100%"
             style={{ maxWidth: 560, height: 80, overflow: "visible" }}
-            aria-label="Encryption flow: Your formulation encrypted with AES-256 per-user key, stored in encrypted vault, accessible only via your account"
+            aria-label="Privacy flow: Your formulation stored in your private workspace, accessible only via your account"
           >
             {/* Step 1 — Document icon */}
             <g transform="translate(56, 40)">
@@ -151,7 +151,7 @@ export function Security() {
                 <rect x="-6" y="-2" width="12" height="10" rx="2" fill="none" stroke="rgba(255,255,255,0.7)" strokeWidth="1.4" />
                 <path d="M-3.5 -2 Q-3.5 -8 0 -8 Q3.5 -8 3.5 -2" fill="none" stroke="rgba(255,255,255,0.7)" strokeWidth="1.4" />
               </g>
-              <text x="0" y="18" textAnchor="middle" fill="#D4A843" fontSize="10" fontFamily="var(--font-inter)">AES-256 per-user key</text>
+              <text x="0" y="18" textAnchor="middle" fill="#D4A843" fontSize="10" fontFamily="var(--font-inter)">Private workspace</text>
             </g>
 
             {/* Step 2 — Vault cylinder */}
@@ -321,13 +321,13 @@ function ClipboardIcon({ size, color, strokeWidth }: { size: number; color: stri
 const pillars = [
   {
     Icon: LockIcon,
-    title: "Per-User AES-256 Encryption",
-    body: "Customer documents are encrypted using customer-controlled credentials, preventing plaintext access by platform administrators.",
+    title: "Private Workspace",
+    body: "Your generated formulations are stored in a workspace tied to your account. No theformulator.ai team member can read your formulation content.",
   },
   {
     Icon: EyeOffIcon,
-    title: "Zero-Knowledge Architecture",
-    body: "We store only encrypted bytes and metadata. The platform has no access to formulation content — only you do.",
+    title: "No Internal Access",
+    body: "We do not use your formulation data for training, analytics, or any purpose other than delivering your results back to you.",
   },
   {
     Icon: ShieldIcon,
@@ -337,7 +337,7 @@ const pillars = [
 ]
 
 const trustSignals = [
-  { Icon: LockIcon, label: "256-bit AES Encryption" },
+  { Icon: LockIcon, label: "Private workspace per account" },
   { Icon: ShieldIcon, label: "GDPR Compliant" },
   { Icon: ShieldIcon, label: "India DPDP Compliant" },
   { Icon: CloudIcon, label: "Hosted on Google Cloud" },

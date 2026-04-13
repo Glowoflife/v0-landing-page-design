@@ -113,6 +113,17 @@ export function Hero({ onRegisterClick }: HeroProps) {
           >
             Request Access →
           </button>
+          <p
+            style={{
+              fontFamily: "var(--font-inter)",
+              fontSize: 13,
+              color: "rgba(255,255,255,0.45)",
+              margin: 0,
+              textAlign: "center",
+            }}
+          >
+            Start free — no credit card required.
+          </p>
           <a
             href="#sample-output"
             className="inline-flex items-center cursor-pointer transition-opacity hover:opacity-80"
@@ -139,7 +150,7 @@ export function Hero({ onRegisterClick }: HeroProps) {
           style={{ gap: 8, marginTop: 24 }}
         >
           {[
-            "561,000+ marketed products",
+            "561,000+ commercially launched products",
             "23,500+ reference formulations",
             "16 regulatory markets",
             "2,400+ CIR safety assessments",

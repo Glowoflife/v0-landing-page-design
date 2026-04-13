@@ -1,7 +1,7 @@
 import { SectionLabelCentered } from "@/components/section-label"
 
 const layers = [
-  { label: "Market Intelligence", desc: "Co-occurrence patterns from 561,000+ marketed products" },
+  { label: "Market Intelligence", desc: "Co-occurrence patterns from 561,000+ commercially launched products" },
   { label: "Regulatory Constraints", desc: "Per-market concentration limits and prohibited substance lists across 16 markets" },
   { label: "Reference Formulations", desc: "23,500+ professional benchmark formulations with phase structure" },
   { label: "Ingredient Technical Data", desc: "HLB values, solubility, phase of addition, typical use levels from supplier TDS" },
@@ -258,7 +258,7 @@ export function EngineExplainer() {
               lineHeight: 1.8,
             }}
           >
-            All retrieval happens in parallel in under 6 seconds.{" "}
+            All 15 intelligence layers query in parallel — results fused in under 6 seconds.{" "}
             <span style={{ color: "#0D1B2A" }}>
               The complete formulation — including regulatory screening across all target markets — generates in under 60 seconds.
             </span>

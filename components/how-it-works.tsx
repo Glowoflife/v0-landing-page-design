@@ -105,7 +105,7 @@ const steps = [
   {
     number: "02",
     title: "Generate formulation routes",
-    body: "Receive structured prototype formulations with INCI-only ingredient lists, phase-by-phase processing, and concentration rationale.",
+    body: "Receive structured prototypes where every concentration is pre-validated against your target markets. Regulatory limits, ingredient compatibility, and HLB requirements are checked during generation — not after.",
     detail: "Aqua · Glycerin · Niacinamide · Centella Asiatica Extract · Bakuchiol",
   },
   {
