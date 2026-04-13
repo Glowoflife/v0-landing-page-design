@@ -55,7 +55,26 @@ export function Hero({ onRegisterClick }: HeroProps) {
           className="text-balance"
         >
           Generate bench-ready cosmetic formulations with built-in regulatory
-          intelligence across 16 global markets.
+          intelligence across{" "}
+          <a
+            href="#markets"
+            onClick={(e) => {
+              e.preventDefault()
+              document.getElementById("markets")?.scrollIntoView({ behavior: "smooth" })
+            }}
+            style={{
+              color: "inherit",
+              textDecoration: "underline",
+              textDecorationColor: "#D4A843",
+              textUnderlineOffset: 4,
+              cursor: "pointer",
+              transition: "color 0.15s",
+            }}
+            onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#D4A843" }}
+            onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "inherit" }}
+          >
+            16 global markets
+          </a>.
         </h1>
 
         {/* Sub-headline */}

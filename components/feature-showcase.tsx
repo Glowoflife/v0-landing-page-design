@@ -45,7 +45,7 @@ function CompliancePanel() {
     { code: "PH", status: "pass" },
   ]
   return (
-    <div style={{ width: "100%", maxWidth: 340 }}>
+    <div id="markets" style={{ width: "100%", maxWidth: 340 }}>
       <div
         style={{
           fontSize: 10,
