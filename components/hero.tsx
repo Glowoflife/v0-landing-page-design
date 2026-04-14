@@ -144,7 +144,7 @@ export function Hero({ onRegisterClick }: HeroProps) {
             Start free — no credit card required.
           </p>
           <a
-            href="#sample-output"
+            href="#sample-reports"
             className="inline-flex items-center cursor-pointer transition-opacity hover:opacity-80"
             style={{
               height: 48,
