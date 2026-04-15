@@ -11,6 +11,7 @@ interface NavProps {
 
 const NAV_LINKS: Array<{ label: string; id?: string; href?: string }> = [
   { label: "How It Works", id: "how-it-works" },
+  { label: "Deformulate", id: "deformulate" },
   { label: "Engine", id: "engine" },
   { label: "Safety", id: "safety" },
   { label: "Sample Reports", id: "sample-reports" },

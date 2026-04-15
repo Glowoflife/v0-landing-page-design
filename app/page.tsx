@@ -6,6 +6,7 @@ import { Hero } from "@/components/hero"
 import { WhoItsFor } from "@/components/who-its-for"
 import { TheProblem } from "@/components/the-problem"
 import { HowItWorks } from "@/components/how-it-works"
+import { Deformulate } from "@/components/deformulate"
 import { SeeWhatYouGet } from "@/components/see-what-you-get"
 import { EngineExplainer } from "@/components/engine-explainer"
 import { SafetyMethodology } from "@/components/safety-methodology"
@@ -31,6 +32,7 @@ export default function Page() {
       <WhoItsFor />
       <TheProblem />
       <HowItWorks />
+      <Deformulate />
       <SeeWhatYouGet />
       <EngineExplainer />
       <SafetyMethodology />
