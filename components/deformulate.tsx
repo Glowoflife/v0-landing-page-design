@@ -9,7 +9,7 @@ const cards = [
   {
     icon: <LayersIcon />,
     title: "3-Layer Blend Detection",
-    body: "Commercial INCI lists decompose supplier blends into constituent names. Our engine re-groups them using 4,300+ supplier TDS records, statistical co-occurrence from 561K products, and functional chemistry rules. See what the formulator actually weighed out.",
+    body: "Commercial INCI lists decompose supplier blends into constituent names. Our engine re-groups them using thousands of ingredient technical records, statistical co-occurrence from 561K products, and functional chemistry rules. See what the formulator actually weighed out.",
   },
   {
     icon: <FlaskIcon />,

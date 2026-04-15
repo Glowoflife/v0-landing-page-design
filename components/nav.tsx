@@ -14,10 +14,9 @@ const NAV_LINKS: Array<{ label: string; id?: string; href?: string }> = [
   { label: "Deformulate", id: "deformulate" },
   { label: "Engine", id: "engine" },
   { label: "Safety", id: "safety" },
-  { label: "Sample Reports", id: "sample-reports" },
+  { label: "Samples", id: "sample-reports" },
   { label: "Data", id: "data" },
   { label: "Pricing", id: "pricing" },
-  { label: "Methodology", href: "/methodology" },
 ]
 
 const TRACKED_IDS = NAV_LINKS.filter((l) => l.id).map((l) => l.id!)
@@ -114,7 +113,7 @@ export function Nav({ onSignInClick, onRegisterClick, defaultScrolled }: NavProp
           <a
             href="/"
             className="flex items-center no-underline"
-            style={{ gap: 10 }}
+            style={{ gap: 10, marginRight: 32 }}
             onClick={(e) => {
               if (window.location.pathname === "/") {
                 e.preventDefault()
@@ -144,7 +143,7 @@ export function Nav({ onSignInClick, onRegisterClick, defaultScrolled }: NavProp
           </a>
 
           {/* Center nav links — desktop */}
-          <div className="hidden md:flex items-center" style={{ gap: 28 }}>
+          <div className="hidden md:flex items-center" style={{ gap: 32 }}>
             {NAV_LINKS.map((link) => {
               const isActive = link.href ? false : activeId === link.id
               return (
