@@ -27,18 +27,6 @@ export function Hero({ onRegisterClick }: HeroProps) {
               marginBottom: 10,
             }}
           />
-          <span
-            style={{
-              fontSize: 11,
-              color: "#D4A843",
-              letterSpacing: "0.1em",
-              fontWeight: 600,
-              fontFamily: "var(--font-inter)",
-              textTransform: "uppercase",
-            }}
-          >
-            NOW IN EARLY ACCESS
-          </span>
         </div>
 
         {/* Headline */}
@@ -172,7 +160,7 @@ export function Hero({ onRegisterClick }: HeroProps) {
             "561,000+ commercially launched products",
             "23,500+ reference formulations",
             "16 regulatory markets",
-            "2,400+ CIR safety assessments",
+            "2,600+ CIR safety assessments",
           ].map((badge) => (
             <span
               key={badge}
@@ -198,7 +186,7 @@ export function Hero({ onRegisterClick }: HeroProps) {
               fontFamily: "var(--font-inter)",
             }}
           >
-            Supplier-Agnostic<sup style={{ color: "#D4A843" }}>*</sup>
+            Supplier-Agnostic
           </span>
         </div>
 
@@ -362,7 +350,7 @@ function AppMockup() {
               fontFamily: "var(--font-inter)",
             }}
           >
-            Good morning, Andrea.
+            Good morning, Formulator.
           </p>
           <p
             style={{
@@ -373,8 +361,7 @@ function AppMockup() {
               fontFamily: "var(--font-inter)",
             }}
           >
-            Friday, 27 March 2026 · 3 active projects · Alpha launch in 14
-            weeks
+            Monday, April 2026 · 3 active formulations
           </p>
 
           {/* Stat cards */}

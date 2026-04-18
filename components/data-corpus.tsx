@@ -229,7 +229,7 @@ const stats = [
     subtext: "historical prototype patterns to support generation and benchmarking",
   },
   {
-    value: "2,400+",
+    value: "2,600+",
     label: "CIR safety assessments",
     subtext: "peer-reviewed safety data integrated at ingredient level",
   },

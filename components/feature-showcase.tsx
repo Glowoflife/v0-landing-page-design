@@ -806,7 +806,7 @@ export function FeatureShowcase() {
         {/* Row 5 — Text LEFT, Visual RIGHT */}
         <AlternatingRow
           tag="Safety"
-          title="2,400+ CIR safety assessments integrated into every output."
+          title="2,600+ CIR safety assessments integrated into every output."
           body="Every ingredient is cross-referenced against the CIR compendium, SCCS opinions, and ECHA dossiers. Safety tiers are computed per-ingredient and flagged in the output before you reach the lab."
           panel={<SafetyPanel />}
         />

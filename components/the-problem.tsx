@@ -39,7 +39,7 @@ export function TheProblem() {
               margin: "-8px 0 24px",
             }}
           >
-            AI has transformed drug discovery. Cosmetic formulation is next.
+            Cosmetic formulators still work from disconnected PDFs, spreadsheets, and supplier portals. We&apos;ve unified the intelligence.
           </p>
           <p
             style={{
